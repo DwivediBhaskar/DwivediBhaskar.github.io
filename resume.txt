@@ -1,0 +1,33 @@
+5 Claude Prompts To Make ATS Friendly Resume In 2026
+
+1.
+“Create an ATS-Friendly Resume in Minutes 🤯”
+👉 Use Claude
+💡 Prompt:
+“Act as an ATS recruiter and create a professional ATS-friendly resume for [job role]. Use strong action words, measurable achievements, and industry keywords.”
+
+2.
+“Optimize Your Resume for Every Job 🚀”
+👉 Customize smarter with Claude
+💡 Prompt:
+“Analyze this job description and optimize my resume for ATS. Add relevant keywords, remove weak sections, and improve readability.”
+
+3.
+“Fix Resume Mistakes That Kill Interview Calls 💼”
+👉 Improve faster using Claude
+💡 Prompt:
+“Review my resume and identify formatting issues, missing keywords, weak bullet points, and ATS-related problems. Rewrite it professionally.”
+
+4.
+“Write Powerful Resume Bullet Points 🎯”
+👉 Stand out with Claude
+💡 Prompt:
+“Rewrite my work experience using achievement-driven bullet points with metrics, impact, and ATS-friendly language.”
+
+5.
+“Create a Resume Summary Recruiters Notice 🔥”
+👉 Upgrade using Claude
+💡 Prompt:
+“Write a compelling ATS-friendly professional summary for a [job role] highlighting skills, achievements, and career goals in 3–4 lines.”
+
+Follow us for daily AI + career growth tip
