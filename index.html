@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhaskar Dwivedi — Portfolio</title>
+<style>
+  :root{
+    --paper:#f6f5f1;
+    --ink:#1c1b19;
+    --accent:#2b4d3f;
+    --muted:#6b6a63;
+    --line:#dedad0;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Georgia', 'Times New Roman', serif;
+    line-height:1.6;
+  }
+  code, .mono{
+    font-family:'Courier New', monospace;
+  }
+  header{
+    padding:6rem 8vw 3rem;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    font-family:'Courier New', monospace;
+    font-size:0.8rem;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:1rem;
+  }
+  h1{
+    font-size:clamp(2.2rem, 6vw, 4rem);
+    font-weight:400;
+    letter-spacing:-0.01em;
+  }
+  .tagline{
+    margin-top:1rem;
+    font-size:1.15rem;
+    color:var(--muted);
+    max-width:38ch;
+  }
+  nav{
+    margin-top:2.5rem;
+    display:flex;
+    gap:1.5rem;
+    font-family:'Courier New', monospace;
+    font-size:0.85rem;
+  }
+  nav a{
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--accent);
+    padding-bottom:2px;
+  }
+  nav a:hover{ color:var(--accent); }
+
+  section{
+    padding:4rem 8vw;
+    border-bottom:1px solid var(--line);
+  }
+  section h2{
+    font-family:'Courier New', monospace;
+    font-size:0.85rem;
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:2rem;
+  }
+  #about p{
+    max-width:65ch;
+    font-size:1.05rem;
+    color:#333;
+  }
+
+  .projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:2rem;
+  }
+  .card{
+    border:1px solid var(--line);
+    padding:1.75rem;
+    background:#fdfcfa;
+    transition:border-color 0.2s ease, transform 0.2s ease;
+  }
+  .card:hover{
+    border-color:var(--accent);
+    transform:translateY(-2px);
+  }
+  .card h3{
+    font-size:1.2rem;
+    font-weight:400;
+    margin-bottom:0.5rem;
+  }
+  .card p{
+    color:var(--muted);
+    font-size:0.95rem;
+    margin-bottom:1rem;
+  }
+  .card .stack{
+    font-family:'Courier New', monospace;
+    font-size:0.75rem;
+    color:var(--accent);
+  }
+  .card a{
+    display:inline-block;
+    margin-top:1rem;
+    font-family:'Courier New', monospace;
+    font-size:0.8rem;
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--ink);
+  }
+
+  .skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.75rem;
+  }
+  .skills-list span{
+    font-family:'Courier New', monospace;
+    font-size:0.8rem;
+    padding:0.4rem 0.9rem;
+    border:1px solid var(--line);
+    color:var(--muted);
+  }
+
+  #contact{
+    border-bottom:none;
+  }
+  .contact-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+    margin-top:1.5rem;
+  }
+  .contact-links a{
+    font-family:'Courier New', monospace;
+    color:var(--ink);
+    text-decoration:none;
+    font-size:0.95rem;
+    border-bottom:1px solid var(--accent);
+    padding-bottom:2px;
+  }
+
+  footer{
+    padding:2rem 8vw;
+    font-family:'Courier New', monospace;
+    font-size:0.75rem;
+    color:var(--muted);
+    text-align:center;
+  }
+
+  @media (max-width: 600px){
+    header, section{ padding-left:6vw; padding-right:6vw; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Portfolio / 2026</div>
+  <h1>Bhaskar Dwivedi</h1>
+  <p class="tagline">Software developer building things on the web. Replace this line with a one-sentence description of what you do.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Write 2–4 sentences about yourself here: what you work on, what you're
+    interested in, and what you're currently learning or building. Keep it
+    conversational — this is the part people actually read before deciding
+    to look at your projects.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Project One</h3>
+      <p>One or two lines describing what this project does and the problem it solves.</p>
+      <div class="stack">React · Node.js · MongoDB</div>
+      <a href="#" target="_blank">View project →</a>
+    </div>
+
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>One or two lines describing what this project does and the problem it solves.</p>
+      <div class="stack">Python · Flask · PostgreSQL</div>
+      <a href="#" target="_blank">View project →</a>
+    </div>
+
+    <div class="card">
+      <h3>Project Three</h3>
+      <p>One or two lines describing what this project does and the problem it solves.</p>
+      <div class="stack">Java · Spring Boot</div>
+      <a href="#" target="_blank">View project →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>Java</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>SQL</span>
+    <span>Git</span>
+    <span>HTML/CSS</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Open to opportunities and collaborations. Reach out through any of these:</p>
+  <div class="contact-links">
+    <a href="mailto:your.email@example.com">Email</a>
+    <a href="https://github.com/DwivediBhaskar" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+    <a href="#" target="_blank">Resume (PDF)</a>
+  </div>
+</section>
+
+<footer>
+  Built by Bhaskar Dwivedi · Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>
