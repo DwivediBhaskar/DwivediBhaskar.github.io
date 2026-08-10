@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhaskar Dwivedi — Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhaskar Dwivedi — Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<div class="layout">
 
-  <aside class="sidebar">
-    <div class="avatar">BD</div>
-    <h1>Bhaskar Dwivedi</h1>
-    <div class="role">Senior Software Engineer</div>
-    <div class="company">Company Name</div>
+<header>
+  <div class="eyebrow">Portfolio / 2026</div>
+  <h1 id="user-name">Bhaskar Dwivedi</h1>
+  <p class="tagline" id="user-tagline">Software Engineer with 8+ years of experience building and shipping production systems.</p>
+  <nav>
+    <a href="#about" class="active">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+  </nav>
+</header>
 
-    <a href="#" class="cv-btn"><i class="fa-solid fa-download"></i> Download CV</a>
+<section id="about">
+  <h2>About</h2>
+  <p id="about-text">
+    Experienced Software Engineer focused on designing scalable backend systems and robust web applications.
+  </p>
+</section>
 
-    <div class="socials">
-      <a href="mailto:your.email@example.com" title="Email"><i class="fa-solid fa-at"></i></a>
-      <a href="https://github.com/DwivediBhaskar" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="#" target="_blank" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-    </div>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline" id="experience-container"></div>
+</section>
 
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="experience.html">Experience</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-    </nav>
-  </aside>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects" id="projects-container"></div>
+</section>
 
-  <main>
-    <h2>About Me</h2>
-    <p class="intro">
-      Bhaskar Dwivedi is a software engineer with 8+ years of experience
-      building and shipping production systems. Replace this paragraph
-      with 3–5 sentences about your focus area, the kind of problems you
-      like solving, and what you're working on now.
-    </p>
+<section id="skills">
+  <h2>Skills</h2>
+  <div id="skills-container"></div>
+</section>
 
-    <div class="panel">
-      <div class="info-grid">
-        <div>
-          <h3><i class="fa-solid fa-star"></i> Interests</h3>
-          <ul>
-            <li>Backend & Distributed Systems</li>
-            <li>System Design</li>
-            <li>Cloud Infrastructure</li>
-            <li>Mentoring Engineers</li>
-          </ul>
-        </div>
-        <div>
-          <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-          <ul>
-            <li>
-              B.Tech, Computer Science
-              <span class="sub">Your University · Year</span>
-            </li>
-            <li>
-              Relevant Certification
-              <span class="sub">Issuing Body · Year</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </main>
+<section id="certificates">
+  <h2>Certificates</h2>
+  <ul class="cert-list" id="certificates-container"></ul>
+</section>
 
-</div>
-<footer>Built by Bhaskar Dwivedi · Hosted on GitHub Pages</footer>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Open to opportunities and collaborations. Reach out through any of these:</p>
+  <div class="contact-links" id="contact-container"></div>
+</section>
+
+<footer>
+  Built by <span id="footer-name">Bhaskar Dwivedi</span> · Hosted on GitHub Pages
+</footer>
+
+<script src="./js/data.js"></script>
 </body>
 </html>
