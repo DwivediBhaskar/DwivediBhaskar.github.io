@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhaskar Dwivedi — Portfolio</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="avatar" id="profile-avatar"></div>
+      <h1 id="profile-name"></h1>
+      <div class="role" id="profile-role"></div>
+      <div class="company" id="profile-company"></div>
+
+      <a href="#" class="cv-btn"><i class="fa-solid fa-download"></i> Download CV</a>
+
+      <div class="socials" id="profile-socials"></div>
+
+      <nav>
+        <a class="nav-link active" onclick="showSection('home')">Home</a>
+        <a class="nav-link" onclick="showSection('experience')">Experience</a>
+        <a class="nav-link" onclick="showSection('projects')">Projects</a>
+        <a class="nav-link" onclick="showSection('skills')">Skills</a>
+        <a class="nav-link" onclick="showSection('certificates')">Certificates</a>
+      </nav>
+    </aside>
+
+    <!-- Main Section -->
+    <main>
+      <section id="home-section">
+        <h2>About Me</h2>
+        <p class="intro">
+          Senior Software Engineer with 8+ years of experience in developing and maintaining web applications across
+          backend and
+          full-stack environments.
+          Strong hands-on experience with JavaScript, Node.js, GraphQL, and MongoDB, along with exposure to enterprise
+          platforms
+          such as AEM and Coveo. Contributed to the delivery of scalable solutions for healthcare and automotive
+          projects by
+          developing APIs, integrating data from multiple systems, and supporting frontend applications. Work on
+          frontend in
+          React.js, Angular, and Vue.js, delivering scalable, responsive, and user-centric web applications. Skilled in
+          cross-functional
+          collaboration, software development lifecycle (SDLC), clean code practices, performance optimization, and
+          agile
+          methodologies.
+          Experienced in leveraging AI-assisted development tools such as Copilot, WindSurff and ChatGPT to accelerate
+          development, troubleshoot code issues, generate unit tests, improve code quality, and enhance overall
+          productivity.
+        </p>
+
+        <div class="panel">
+          <div class="info-grid">
+            <!-- <div>
+              <h3><i class="fa-solid fa-star"></i> Interests</h3>
+              <ul>
+                <li>Backend & Distributed Systems</li>
+                <li>System Design</li>
+                <li>Cloud Infrastructure</li>
+                <li>Mentoring Engineers</li>
+              </ul>
+            </div> -->
+            <div>
+              <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+              <ul>
+                <li>
+                 Bachelor of Engineering – Electronics & Communication (BE, EC)
+                  <span class="sub">Surabhi College of Engineering & Technology, Bhopal | RGPV University | 2012 – 2016 | CGPA: 7.18 / 10.0</span>
+                </li>
+                <!-- <li>
+                  Relevant Certification
+                  <span class="sub">Issuing Body · Year</span>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience-section" class="content-section" style="display:none;">
+        <h2 id="section-title">Experience</h2>
+        <p class="intro" id="section-intro">Professional background and trajectory.</p>
+        <div class="timeline" id="experience-container"></div>
+      </section>
+
+      <section id="projects-section" class="content-section" style="display:none;">
+        <div class="projects" id="projects-container"></div>
+      </section>
+
+      <section id="skills-section" class="content-section" style="display:none;">
+        <div id="skills-container"></div>
+      </section>
+
+      <section id="certificates-section" class="content-section" style="display:none;">
+        <ul class="certificates-list" id="certificates-container"></ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>Built by Bhaskar Dwivedi · Hosted on GitHub Pages</footer>
+
+  <!-- Load Data Files -->
+  <script src="js/profileData.js"></script>
+  <script src="js/experienceData.js"></script>
+  <script src="js/projectsData.js"></script>
+  <script src="js/skillsData.js"></script>
+  <script src="js/certificatesData.js"></script>
+
+  <!-- Load Main Logic -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
